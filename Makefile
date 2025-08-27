@@ -6,7 +6,7 @@
 #    By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/08/24 00:39:33 by tamamart          #+#    #+#              #
-#    Updated: 2025/08/24 00:48:53 by tamamart         ###   ########.fr        #
+#    Updated: 2025/08/27 16:44:24 by tamamart         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@
 NAME = libft.a
 
 # Compiler and flags
-CC = cc
+CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 
 # Source and object files
