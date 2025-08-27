@@ -6,7 +6,7 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/27 15:19:39 by tamamart          #+#    #+#             */
-/*   Updated: 2025/08/27 16:09:05 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/08/27 16:17:57 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	size_t			i;
+	size_t	i;
 
 	i = 0;
 	while (s[i])
