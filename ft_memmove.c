@@ -6,7 +6,7 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/27 14:37:10 by tamamart          #+#    #+#             */
-/*   Updated: 2025/08/27 15:07:27 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/08/27 16:03:52 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,14 +20,13 @@ void	*ft_memmove(void *dst, const void *src, size_t n)
 
 	dst_temp = (unsigned char *)dst;
 	src_temp = (const unsigned char *)src;
+	if (!dst && !src)
+		return (NULL);
 	if (src_temp < dst_temp)
 	{
 		i = n;
-		while (i > 0)
-		{
-			i--;
+		while (i--)
 			dst_temp[i] = src_temp[i];
-		}
 	}
 	else
 	{
@@ -46,13 +45,16 @@ void	*ft_memmove(void *dst, const void *src, size_t n)
 
 int main(void)
 {
-	char str[] = "Hola mundo insensato!";
-	char dest1[22];
-	char dest2[22];
-	size_t n = 22;
-	ft_memmove(dest1, str, n);
-	memmove(dest2, str, n);
-	printf("ft_memmove: %s\n", dest1);
-	printf("memmove:    %s\n", dest2);
-	return (0);
-}*/
+	char	src[] = "Hola mundo insensato!";
+	char	dst1[20];
+	char	dst2[20];
+	size_t	n = 13;
+
+	ft_memmove(dst1, src, n);
+	printf("ft_memmove: %s\n", dst1);
+
+	memmove(dst2, src, n);
+	printf("memmove: %s\n", dst2);
+
+	return 0;
+} */
