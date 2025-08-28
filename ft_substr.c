@@ -6,11 +6,9 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/27 20:33:27 by tamamart          #+#    #+#             */
-/*   Updated: 2025/08/27 22:05:04 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/08/28 14:28:41 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 #include "libft.h"
 
