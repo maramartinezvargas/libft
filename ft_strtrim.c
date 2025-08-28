@@ -6,7 +6,7 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/28 15:30:23 by tamamart          #+#    #+#             */
-/*   Updated: 2025/08/28 20:58:55 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/08/28 21:03:22 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,3 +52,19 @@ char	*ft_strtrim(char const *s1, char const *set)
 	str[i] = '\0';
 	return (str);
 }
+
+/* #include <stdio.h>
+
+int	main(void)
+{
+	char const	*s1 = "       Hola mundo!      ";
+	char const	*set = " ";
+	char		*dest = ft_strtrim(s1, set);
+	if (dest)
+	{
+		printf("Original: |%s|\n", s1);
+		printf("ft_strtrim: |%s|\n", dest);
+		free(dest);
+	}
+	return (0);
+} */
