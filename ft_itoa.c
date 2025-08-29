@@ -6,7 +6,7 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/29 19:25:19 by tamamart          #+#    #+#             */
-/*   Updated: 2025/08/29 21:00:25 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/08/29 21:56:19 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,3 +53,16 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
+
+/* #include <stdio.h>
+int main(void)
+{
+	int number = -12345;
+	char *str = ft_itoa(number);
+	if (str)
+	{
+		printf("%d -> %s\n", number, str);
+		free(str);
+	}
+	return (0);
+} */
