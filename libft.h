@@ -6,7 +6,7 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/23 22:50:55 by tamamart          #+#    #+#             */
-/*   Updated: 2025/08/27 20:11:06 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/08/29 21:22:29 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,16 +38,16 @@ char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
 char	**ft_split(char const *s, char c);
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char)); // Extra
-void	ft_striteri(char *s, void (*f)(unsigned int, char*)); // Extra
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 
 // Conversiones
 int		ft_atoi(const char *nptr);
-char	*ft_itoa(int n); // Extra
+char	*ft_itoa(int n);
 
 // Comprobación de caracteres
-int		ft_is_upper(int c); // Extra
-int		ft_is_lower(int c); // Extra
+int		ft_is_upper(int c);// Extra
+int		ft_is_lower(int c);// Extra
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
@@ -57,9 +57,9 @@ int		ft_toupper(int c);
 int		ft_tolower(int c);
 
 // Salida por descriptor
-void	ft_putchar_fd(char c, int fd); // Extra
-void	ft_putstr_fd(char *s, int fd); // Extra
-void	ft_putendl_fd(char *s, int fd); // Extra
-void	ft_putnbr_fd(int n, int fd); // Extra
+void	ft_putchar_fd(char c, int fd);
+void	ft_putstr_fd(char *s, int fd);
+void	ft_putendl_fd(char *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
 
 #endif
