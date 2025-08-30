@@ -6,7 +6,7 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/23 23:18:32 by tamamart          #+#    #+#             */
-/*   Updated: 2025/08/25 19:51:04 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/08/30 14:31:56 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ int	ft_isalpha(int c)
 int	main(void)
 {
 	printf("ft_isalpha vs isalpha\n");
-	printf("----------------------\n");
 
 	printf("ft_isalpha('a') = %d\n", ft_isalpha('a') != 0);
 	printf("   isalpha('a') = %d\n", isalpha('a') != 0);

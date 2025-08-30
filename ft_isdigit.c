@@ -6,7 +6,7 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/24 00:05:51 by tamamart          #+#    #+#             */
-/*   Updated: 2025/08/24 00:10:08 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/08/30 14:32:10 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ int	ft_isdigit(int c)
 int main(void)
 {
     printf("ft_isdigit vs isdigit\n");
-    printf("----------------------\n");
 
     printf("ft_isdigit('0') = %d\n", ft_isdigit('0') != 0);
     printf("   isdigit('0') = %d\n", isdigit('0') != 0);

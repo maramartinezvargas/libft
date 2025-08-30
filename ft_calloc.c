@@ -6,7 +6,7 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/27 17:45:36 by tamamart          #+#    #+#             */
-/*   Updated: 2025/08/27 19:14:44 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/08/30 14:27:14 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,3 +33,26 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	}
 	return ((void *)ptr);
 }
+
+/* #include <stdio.h>
+#include <string.h>
+
+int	main(void)
+{
+	int	*numbers;
+	size_t	i;
+	size_t	num;
+
+	num = 5;
+	numbers = (int *)ft_calloc(num, sizeof(int));
+	if (numbers == NULL)
+		return (1);
+	printf("Array de %zu enteros inicializados a 0:\n", num);
+	for (i = 0; i < num; i++)
+	{
+		printf("%d ", numbers[i]);
+	}
+	printf("\n");
+	free(numbers);
+	return (0);
+} */

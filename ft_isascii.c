@@ -6,7 +6,7 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/24 00:57:09 by tamamart          #+#    #+#             */
-/*   Updated: 2025/08/24 01:09:47 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/08/30 14:32:04 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,6 @@ int	ft_isascii(int c)
 int main(void)
 {
     printf("ft_isascii vs isascii\n");
-    printf("----------------------\n");
-
     printf("ft_isascii(65) = %d\n", ft_isascii(65) != 0);
     printf("   isascii(65) = %d\n", isascii(65) != 0);
     printf("----------------------\n");

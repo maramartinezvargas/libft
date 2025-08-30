@@ -6,7 +6,7 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/27 20:33:27 by tamamart          #+#    #+#             */
-/*   Updated: 2025/08/28 14:28:41 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/08/30 14:09:45 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (ft_strdup(""));
 	if (len > ft_strlen(s) - start)
 		len = ft_strlen(s) - start;
-	else
-		str = malloc(sizeof(char) * (len + 1));
-	if (str == NULL)
+	str = malloc(sizeof(char) * (len + 1));
+	if (!str)
 		return (NULL);
 	i = 0;
 	while (s[start + i] != '\0' && i < len)
@@ -36,3 +35,23 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	str[i] = '\0';
 	return (str);
 }
+
+/* #include <stdio.h>
+
+int main(void)
+{
+	char *s = "Hola mundo insensato!";
+	unsigned int start = 7;
+	size_t len = 5;
+	char *substr = ft_substr(s, start, len);
+	if (substr)
+	{
+		printf("Substring: '%s'\n", substr);
+		free(substr);
+	}
+	else
+	{
+		printf("Error: Substring is NULL\n");
+	}
+	return 0;
+} */

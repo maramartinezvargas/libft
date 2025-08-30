@@ -1,33 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/25 20:23:46 by tamamart          #+#    #+#             */
-/*   Updated: 2025/08/30 14:26:25 by tamamart         ###   ########.fr       */
+/*   Created: 2025/08/29 22:15:46 by tamamart          #+#    #+#             */
+/*   Updated: 2025/08/30 14:21:27 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *s, size_t n)
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	ft_memset(s, 0, n);
-}
+	unsigned int	i;
 
-/* #include <string.h>
+	if (!s || !f)
+		return ;
+	i = 0;
+	while (s[i])
+	{
+		f(i, &s[i]);
+		i++;
+	}
+}
+/* 
 #include <stdio.h>
 
-int	main(void)
+void print_char_with_index(unsigned int index, char *c)
 {
-	char	str1[] = "Hola que tal";
-	char	str2[] = "Hola que tal";
+	printf("Indice: %u, Caracter: %c\n", index, *c);
+}
 
-	printf("Antes de bzero:\nstr1: %s\nstr2: %s\n", str1, str2);
-	bzero(str1 + 5, 3);
-	ft_bzero(str2 + 5, 3);
-	printf("Después de bzero:\nstr1: %s\nstr2: %s\n", str1, str2);
+int main(void)
+{
+	char str[] = "Hola mundo insensato!";
+	printf("Cadena original: %s\n", str);
+	ft_striteri(str, print_char_with_index);
 	return (0);
 } */

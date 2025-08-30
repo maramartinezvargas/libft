@@ -6,7 +6,7 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/24 00:14:18 by tamamart          #+#    #+#             */
-/*   Updated: 2025/08/24 00:56:27 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/08/30 14:31:45 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,6 @@ int	ft_isalnum(int c)
 int	main(void)
 {
 	printf("ft_isalnum vs isalnum\n");
-	printf("----------------------\n");
-
 	printf("ft_isalnum('a') = %d\n", ft_isalnum('a') != 0);
 	printf("   isalnum('a') = %d\n", isalnum('a') != 0);
 	printf("----------------------\n");

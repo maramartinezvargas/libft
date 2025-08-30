@@ -6,7 +6,7 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/25 20:26:01 by tamamart          #+#    #+#             */
-/*   Updated: 2025/08/29 20:22:48 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/08/30 14:36:26 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,3 +24,14 @@ void	*ft_memset(void *str, int c, size_t n)
 	}
 	return (str);
 }
+
+/* #include <stdio.h>
+
+int main(void)
+{
+	char str[] = "Hola mundo insensato!";
+	printf("Antes: %s\n", str);
+	ft_memset(str, 'x', 5);
+	printf("Después: %s\n", str);
+	return 0;
+} */

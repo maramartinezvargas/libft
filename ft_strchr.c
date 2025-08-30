@@ -6,7 +6,7 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/27 15:19:39 by tamamart          #+#    #+#             */
-/*   Updated: 2025/08/27 16:17:57 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/08/30 14:37:58 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,23 +27,6 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)&s[i]);
 	return (0);
 }
-
-/* unsigned char	*str;
-unsigned char	character;
-size_t			i;
-
-str = (unsigned char *)s;
-character = (unsigned char)c;
-i = 0;
-while (str[i])
-{
-	if (str[i] == character)
-		return (&str[i]);
-	i++;
-}
-if (character == '\0')
-	return ((char *)&str[i]);
-return (0); */
 
 /* #include <stdio.h>
 #include <string.h>

@@ -6,7 +6,7 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/29 21:24:50 by tamamart          #+#    #+#             */
-/*   Updated: 2025/08/29 21:31:02 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/08/30 14:37:18 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,23 @@ void	ft_putstr_fd(char *s, int fd)
 		i++;
 	}
 }
+
+/* #include <fcntl.h>
+#include <stdio.h>
+
+int main(void)
+{
+	int		fd;
+	char	*str;
+
+	str = "Hola mundo insensato!";
+	fd = open("test.txt", O_CREAT | O_WRONLY | O_TRUNC, 0644);
+	if (fd == -1)
+	{
+		perror("Error al abrir el archivo");
+		return (1);
+	}
+	ft_putstr_fd(str, fd);
+	close(fd);
+	return (0);
+} */
