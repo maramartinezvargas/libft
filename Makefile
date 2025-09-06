@@ -6,7 +6,7 @@
 #    By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/08/24 00:39:33 by tamamart          #+#    #+#              #
-#    Updated: 2025/09/06 20:16:09 by tamamart         ###   ########.fr        #
+#    Updated: 2025/09/06 21:38:34 by tamamart         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -58,7 +58,9 @@ SRC = 	ft_is_lower.c \
 OBJ = $(SRC:.c=.o)
 
 # Bonus files
-SRC_BONUS = ft_lstnew.c
+SRC_BONUS = ft_lstnew.c \
+			ft_lstadd_front.c \
+			ft_lstsize.c
 
 OBJ_BONUS = $(SRC_BONUS:.c=.o)
 
