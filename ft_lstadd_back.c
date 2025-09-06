@@ -6,7 +6,7 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/06 22:49:28 by tamamart          #+#    #+#             */
-/*   Updated: 2025/09/06 23:09:10 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/09/06 23:17:21 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,24 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	if (new)
 		aux->next = new;
 }
+
+/* #include <stdio.h>
+
+int	main(void)
+{
+	t_list	*list;
+	t_list	*current;
+
+	list = ft_lstnew("Nodo 1");
+	list->next = ft_lstnew("Nodo 2");
+	list->next->next = ft_lstnew("Nodo 3");
+	ft_lstadd_back(&list, ft_lstnew("Nodo 4"));
+	current = list;
+	while (current != NULL)
+	{
+		printf("%s -> ", (char *)current->content);
+		current = current->next;
+	}
+	printf("NULL\n");
+	return (0);
+} */
