@@ -6,7 +6,7 @@
 #    By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/08/24 00:39:33 by tamamart          #+#    #+#              #
-#    Updated: 2025/09/06 23:36:42 by tamamart         ###   ########.fr        #
+#    Updated: 2025/09/06 23:41:53 by tamamart         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -63,7 +63,8 @@ SRC_BONUS = ft_lstnew.c \
 			ft_lstsize.c \
 			ft_lstlast.c \
 			ft_lstadd_back.c \
-			ft_lstdelone.c
+			ft_lstdelone.c \
+			ft_lstclear.c
 
 OBJ_BONUS = $(SRC_BONUS:.c=.o)
 
