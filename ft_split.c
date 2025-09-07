@@ -6,7 +6,7 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/28 21:14:49 by tamamart          #+#    #+#             */
-/*   Updated: 2025/08/28 22:34:49 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/09/07 02:30:26 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ static int	ft_place_words(char const *s, char c, char **arr)
 			{
 				while (word_i--)
 					free(arr[word_i]);
-				return (0);
+				return (free(arr), 0);
 			}
 			ft_strlcpy(arr[word_i++], s, word_len + 1);
 			s += word_len;
@@ -71,7 +71,8 @@ char	**ft_split(char const *s, char c)
 	new = (char **)malloc(sizeof(char *) * (count + 1));
 	if (!new)
 		return (NULL);
-	ft_place_words(s, c, new);
+	if (!ft_place_words(s, c, new))
+		return (NULL);
 	new[count] = NULL;
 	return (new);
 }
