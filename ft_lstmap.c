@@ -6,7 +6,7 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/07 01:01:43 by tamamart          #+#    #+#             */
-/*   Updated: 2025/09/07 03:08:15 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/09/07 03:11:42 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,11 +79,11 @@ int	main(void)
 	t_list	*lst;
 	t_list	*new_lst;
 
-	lst = ft_lstnew(ft_strdup("hello"));
-	ft_lstadd_back(&lst, ft_lstnew(ft_strdup("world")));
-	ft_lstadd_back(&lst, ft_lstnew(ft_strdup("this")));
-	ft_lstadd_back(&lst, ft_lstnew(ft_strdup("is")));
-	ft_lstadd_back(&lst, ft_lstnew(ft_strdup("libft")));
+	lst = ft_lstnew(ft_strdup("Hola"));
+	ft_lstadd_back(&lst, ft_lstnew(ft_strdup("mundo")));
+	ft_lstadd_back(&lst, ft_lstnew(ft_strdup("insensato")));
+	ft_lstadd_back(&lst, ft_lstnew(ft_strdup("que")));
+	ft_lstadd_back(&lst, ft_lstnew(ft_strdup("tal")));
 	printf("Lista antes de ft_lstmap:\n");
 	print_list(lst);
 	new_lst = ft_lstmap(lst, to_upper, del);
