@@ -6,18 +6,29 @@
 #    By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/08/24 00:39:33 by tamamart          #+#    #+#              #
-#    Updated: 2025/09/07 01:57:50 by tamamart         ###   ########.fr        #
+#    Updated: 2025/09/12 18:41:41 by tamamart         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-# Makefile for libft
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2025/08/24 00:39:33 by tamamart          #+#    #+#              #
+#    Updated: 2025/09/12 18:00:27 by tamamart         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 NAME = libft.a
 
-# Compiler and flags
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
+RM = rm -rf
 
-# First part files and additional part files. 
+# Mandatory sources
 SRC = 	ft_is_lower.c \
 		ft_is_upper.c \
 		ft_isalpha.c \
@@ -57,38 +68,40 @@ SRC = 	ft_is_lower.c \
 
 OBJ = $(SRC:.c=.o)
 
-# Bonus files
-SRC_BONUS = ft_lstnew.c \
-			ft_lstadd_front.c \
-			ft_lstsize.c \
-			ft_lstlast.c \
-			ft_lstadd_back.c \
-			ft_lstdelone.c \
-			ft_lstclear.c \
-			ft_lstiter.c \
-			ft_lstmap.c
-
+# Bonus sources
+SRC_BONUS = ft_lstnew_bonus.c \
+			ft_lstadd_front_bonus.c \
+			ft_lstsize_bonus.c \
+			ft_lstlast_bonus.c \
+			ft_lstadd_back_bonus.c \
+			ft_lstdelone_bonus.c \
+			ft_lstclear_bonus.c \
+			ft_lstiter_bonus.c \
+			ft_lstmap_bonus.c
+				
 OBJ_BONUS = $(SRC_BONUS:.c=.o)
 
-# Rules
+# Default (mandatory)
 $(NAME): $(OBJ)
 	ar rcs $(NAME) $(OBJ)
 	ranlib $(NAME)
 
+# Bonus
 bonus: $(OBJ_BONUS) $(NAME)
 	ar rcs $(NAME) $(OBJ_BONUS)
+	ranlib $(NAME)
 
 %.o: %.c libft.h
-	$(CC) $(CFLAGS) -o $@ -c $<
+	$(CC) $(CFLAGS) -c $< -o $@
 
 all: $(NAME)
 
 clean:
-	rm -f $(OBJ) $(OBJ_BONUS)
+	$(RM) $(OBJ) $(OBJ_BONUS)
 
 fclean: clean
-	rm -f $(NAME)
+	$(RM) $(NAME)
 
-re: fclean all	
+re: fclean all
 
 .PHONY: all clean fclean re bonus
