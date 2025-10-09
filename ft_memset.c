@@ -6,11 +6,19 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/25 20:26:01 by tamamart          #+#    #+#             */
-/*   Updated: 2025/08/30 14:36:26 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/10/09 14:14:44 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+ * @brief Fill a block of memory with a specific byte.
+ * @param str Pointer to the memory area.
+ * @param c Value to set.
+ * @param n Number of bytes to fill.
+ * @return Pointer to the modified memory block.
+ */
 
 void	*ft_memset(void *str, int c, size_t n)
 {

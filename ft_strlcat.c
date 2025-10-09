@@ -6,11 +6,19 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/26 14:33:17 by tamamart          #+#    #+#             */
-/*   Updated: 2025/08/26 15:13:02 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/10/09 14:20:00 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+ * @brief Concatenate strings with a size limit.
+ * @param dst Destination buffer.
+ * @param src Source string.
+ * @param dstsize Total size of the destination buffer.
+ * @return Combined length of src and the initial dst.
+ */
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {

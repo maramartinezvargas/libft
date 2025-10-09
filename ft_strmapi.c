@@ -6,11 +6,18 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/29 21:58:25 by tamamart          #+#    #+#             */
-/*   Updated: 2025/08/29 22:13:27 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/10/09 15:24:18 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+ * @brief Apply a function to each character and create a new string.
+ * @param s Original string.
+ * @param f Function to apply (index, char).
+ * @return New resulting string.
+ */
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

@@ -6,15 +6,20 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/27 16:34:51 by tamamart          #+#    #+#             */
-/*   Updated: 2025/08/27 17:09:45 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/10/09 14:23:35 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/* La función strnstr() localiza la primera ocurrencia de la cadena terminada 
-en cero s2 en la cadena s1 , donde se buscan como máximo n bytes. Los caracteres
-que aparecen después de un carácter '\0' no se buscan.*/
+/*
+ * @brief Locate a substring within a string.
+ * @param big Main string.
+ * @param little Substring to find.
+ * @param len Maximum number of characters to search.
+ * @return Pointer to the beginning of the substring or NULL if not found.
+ */
+
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
 	size_t	i;

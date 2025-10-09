@@ -6,11 +6,17 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/12 17:41:43 by tamamart          #+#    #+#             */
-/*   Updated: 2025/09/12 17:41:45 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/10/09 15:33:09 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+ * @brief Add a node at the end of the list.
+ * @param lst Pointer to the list.
+ * @param new Node to add.
+ */
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {

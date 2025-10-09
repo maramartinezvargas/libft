@@ -6,11 +6,17 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/29 21:33:08 by tamamart          #+#    #+#             */
-/*   Updated: 2025/08/30 14:36:50 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/10/09 15:31:10 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+ * @brief Write a string followed by a newline.
+ * @param s String to write.
+ * @param fd Destination descriptor.
+ */
 
 void	ft_putendl_fd(char *s, int fd)
 {

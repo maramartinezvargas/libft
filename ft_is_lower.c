@@ -6,11 +6,15 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/25 19:48:30 by tamamart          #+#    #+#             */
-/*   Updated: 2025/08/30 14:29:38 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/10/09 15:26:14 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* 
+@brief Returns 1 if ASCII lowercase. 
+*/
 
 int	ft_is_lower(int c)
 {

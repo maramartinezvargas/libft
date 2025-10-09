@@ -6,11 +6,19 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/27 14:37:10 by tamamart          #+#    #+#             */
-/*   Updated: 2025/09/07 02:37:38 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/10/09 14:14:20 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+ * @brief Copy memory allowing overlapping regions.
+ * @param dst Destination.
+ * @param src Source.
+ * @param n Number of bytes to copy.
+ * @return Pointer to the destination.
+ */
 
 void	*ft_memmove(void *dst, const void *src, size_t n)
 {

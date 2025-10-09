@@ -6,11 +6,17 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/29 22:15:46 by tamamart          #+#    #+#             */
-/*   Updated: 2025/08/30 14:21:27 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/10/09 15:24:27 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+ * @brief Apply a function to each character of a string.
+ * @param s String to modify.
+ * @param f Function that receives index and character pointer.
+ */
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {

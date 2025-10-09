@@ -6,11 +6,15 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/24 02:02:41 by tamamart          #+#    #+#             */
-/*   Updated: 2025/08/24 02:18:00 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/10/09 15:45:18 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+* @brief Convert a lowercase letter to uppercase.
+*/
 
 int	ft_toupper(int c)
 {

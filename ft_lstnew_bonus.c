@@ -1,16 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstnew_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/06 20:14:46 by tamamart          #+#    #+#             */
-/*   Updated: 2025/09/06 20:30:40 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/10/09 15:31:48 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+ * @brief Create a new list node.
+ * @param content Node content.
+ * @return New node or NULL if allocation fails.
+ */
 
 t_list	*ft_lstnew(void *content)
 {

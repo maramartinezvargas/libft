@@ -6,11 +6,17 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/25 20:23:46 by tamamart          #+#    #+#             */
-/*   Updated: 2025/08/30 14:26:25 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/10/09 12:46:00 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+ * @brief Fill a block of memory with zeros.
+ * @param s Pointer to the memory area to modify.
+ * @param n Number of bytes to set to zero.
+ */
 
 void	ft_bzero(void *s, size_t n)
 {

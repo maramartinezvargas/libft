@@ -6,11 +6,15 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/25 19:47:52 by tamamart          #+#    #+#             */
-/*   Updated: 2025/08/30 14:31:18 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/10/09 15:25:49 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+@brief Returns 1 if ASCII uppercase. 
+*/
 
 int	ft_is_upper(int c)
 {

@@ -6,11 +6,15 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/23 23:18:32 by tamamart          #+#    #+#             */
-/*   Updated: 2025/08/30 14:31:56 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/10/09 15:26:55 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+ @brief Returns 1 if alphabetic.
+ */
 
 int	ft_isalpha(int c)
 {

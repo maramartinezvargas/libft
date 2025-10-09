@@ -6,11 +6,19 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/25 21:58:23 by tamamart          #+#    #+#             */
-/*   Updated: 2025/08/25 22:16:16 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/10/09 14:11:27 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+ * @brief Copy a block of memory.
+ * @param dst Destination.
+ * @param src Source.
+ * @param n Number of bytes to copy.
+ * @return Pointer to the destination.
+ */
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {

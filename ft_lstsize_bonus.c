@@ -1,16 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstsize.c                                       :+:      :+:    :+:   */
+/*   ft_lstsize_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/06 21:25:28 by tamamart          #+#    #+#             */
-/*   Updated: 2025/09/06 22:42:48 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/10/09 15:32:22 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+ * @brief Return the size of the list.
+ * @param lst List to measure.
+ * @return Number of nodes in the list.
+ */
 
 int	ft_lstsize(t_list *lst)
 {

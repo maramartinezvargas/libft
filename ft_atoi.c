@@ -6,11 +6,17 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/27 17:11:11 by tamamart          #+#    #+#             */
-/*   Updated: 2025/08/27 17:42:35 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/10/09 15:25:01 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+ * @brief Convert a string to an integer.
+ * @param nptr String containing a numeric representation.
+ * @return Integer value obtained.
+ */
 
 int	ft_atoi(const char *nptr)
 {
@@ -44,10 +50,11 @@ int main(void)
 	const char	*nptr;
 	int			result;
 
-	nptr = "+-54";
+	nptr = "9223372036854775811";
 	result = ft_atoi(nptr);
 	printf("ft_atoi: %d\n", result);
 	result = atoi(nptr);
 	printf("   atoi: %d\n", result);
 	return (0);
-} */
+}
+ */

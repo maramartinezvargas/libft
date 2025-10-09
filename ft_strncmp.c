@@ -6,11 +6,19 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/26 15:18:11 by tamamart          #+#    #+#             */
-/*   Updated: 2025/08/27 14:33:48 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/10/09 14:21:42 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+ * @brief Compare two strings up to n characters.
+ * @param s1 First string.
+ * @param s2 Second string.
+ * @param n Maximum number of characters to compare.
+ * @return 0 if equal, or the difference between the first differing chars.
+ */
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

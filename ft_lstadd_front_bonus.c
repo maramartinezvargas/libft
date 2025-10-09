@@ -6,11 +6,17 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/06 21:15:06 by tamamart          #+#    #+#             */
-/*   Updated: 2025/09/12 17:41:59 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/10/09 15:32:07 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+ * @brief Add a node at the beginning of the list.
+ * @param lst Double pointer to the list.
+ * @param new Node to add.
+ */
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {

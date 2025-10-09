@@ -6,11 +6,17 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/29 21:24:50 by tamamart          #+#    #+#             */
-/*   Updated: 2025/08/30 14:37:18 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/10/09 15:30:58 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+ * @brief Write a string to a file descriptor.
+ * @param s String to write.
+ * @param fd Destination descriptor.
+ */
 
 void	ft_putstr_fd(char *s, int fd)
 {

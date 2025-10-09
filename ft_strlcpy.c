@@ -6,11 +6,19 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/26 13:34:53 by tamamart          #+#    #+#             */
-/*   Updated: 2025/08/26 14:32:37 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/10/09 14:19:40 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+ * @brief Copy a string with a size limit.
+ * @param dst Destination buffer.
+ * @param src Source string.
+ * @param dstsize Size of the destination buffer.
+ * @return Total length of the string it tried to create.
+ */
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {

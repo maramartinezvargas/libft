@@ -6,11 +6,17 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/29 19:25:19 by tamamart          #+#    #+#             */
-/*   Updated: 2025/08/29 21:56:19 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/10/09 15:25:23 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+ * @brief Count the number of digits in an integer.
+ * @param n Integer value.
+ * @return Number of digits including sign if negative.
+ */
 
 static int	ft_count_digits(int n)
 {
@@ -26,6 +32,12 @@ static int	ft_count_digits(int n)
 	}
 	return (count);
 }
+
+/*
+ * @brief Convert an integer to a newly allocated string.
+ * @param n Integer value.
+ * @return Dynamically allocated string representing the number.
+ */
 
 char	*ft_itoa(int n)
 {

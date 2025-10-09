@@ -1,16 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstclear.c                                      :+:      :+:    :+:   */
+/*   ft_lstclear_bonus.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/06 23:42:18 by tamamart          #+#    #+#             */
-/*   Updated: 2025/09/07 00:35:46 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/10/09 15:34:21 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+ * @brief Clear and free all nodes in the list.
+ * @param lst Pointer to the list.
+ * @param del Function to free node content.
+ */
 
 void	ft_lstclear(t_list **lst, void (*del)(void	*))
 {

@@ -6,11 +6,13 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/24 00:14:18 by tamamart          #+#    #+#             */
-/*   Updated: 2025/08/30 14:31:45 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/10/09 15:27:45 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* @brief Returns 1 if alphanumeric. */
 
 int	ft_isalnum(int c)
 {

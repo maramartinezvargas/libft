@@ -1,16 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstlast.c                                       :+:      :+:    :+:   */
+/*   ft_lstlast_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/06 22:10:47 by tamamart          #+#    #+#             */
-/*   Updated: 2025/09/06 22:40:44 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/10/09 15:32:45 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+ * @brief Return the last node of the list.
+ * @param lst List to search.
+ * @return Last node or NULL if list is empty.
+ */
 
 t_list	*ft_lstlast(t_list *lst)
 {

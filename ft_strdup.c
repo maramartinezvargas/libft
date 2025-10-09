@@ -6,11 +6,17 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/27 19:27:39 by tamamart          #+#    #+#             */
-/*   Updated: 2025/08/27 20:22:38 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/10/09 14:22:12 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+ * @brief Duplicate a string in dynamically allocated memory.
+ * @param s Original string.
+ * @return Pointer to the new string or NULL if allocation fails.
+ */
 
 char	*ft_strdup(const char *s)
 {

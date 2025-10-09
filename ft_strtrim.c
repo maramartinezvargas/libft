@@ -6,11 +6,18 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/28 15:30:23 by tamamart          #+#    #+#             */
-/*   Updated: 2025/08/28 21:03:22 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/10/09 15:12:16 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+* @brief Check if a character is in a given set.
+* @param c Character to check.
+* @param str Set of characters.
+* @return 1 if found, 0 otherwise.
+*/
 
 static	int	ft_in_set(char c, char const *str)
 {
@@ -25,6 +32,13 @@ static	int	ft_in_set(char c, char const *str)
 	}
 	return (0);
 }
+
+/*
+ * @brief Trim characters from the beginning and end of a string.
+ * @param s1 Original string.
+ * @param set Set of characters to remove.
+ * @return New trimmed string or NULL if allocation fails.
+ */
 
 char	*ft_strtrim(char const *s1, char const *set)
 {

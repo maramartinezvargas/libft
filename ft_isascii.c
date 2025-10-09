@@ -6,11 +6,15 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/24 00:57:09 by tamamart          #+#    #+#             */
-/*   Updated: 2025/08/30 14:32:04 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/10/09 15:29:31 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+@brief Returns 1 if ASCII (0–127).
+*/
 
 int	ft_isascii(int c)
 {

@@ -6,11 +6,17 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/29 21:17:27 by tamamart          #+#    #+#             */
-/*   Updated: 2025/08/30 14:35:52 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/10/09 15:29:51 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+ * @brief Write a character to a file descriptor.
+ * @param c Character to write.
+ * @param fd File descriptor (e.g. 1 for stdout).
+ */
 
 void	ft_putchar_fd(char c, int fd)
 {

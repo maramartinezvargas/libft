@@ -1,16 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
+/*   ft_lstdelone_bonus.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/06 23:20:46 by tamamart          #+#    #+#             */
-/*   Updated: 2025/09/06 23:38:27 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/10/09 15:33:51 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+ * @brief Delete a single node from the list.
+ * @param lst Node to delete.
+ * @param del Function to free the node's content.
+ * @return None.
+ */
 
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {

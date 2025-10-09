@@ -6,11 +6,19 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/27 20:33:27 by tamamart          #+#    #+#             */
-/*   Updated: 2025/08/30 14:09:45 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/10/09 14:26:58 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+ * @brief Create a substring from a given string.
+ * @param s Original string.
+ * @param start Starting index.
+ * @param len Maximum length of the substring.
+ * @return New string or NULL if allocation fails.
+ */
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

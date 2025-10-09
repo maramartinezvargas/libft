@@ -6,11 +6,18 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/28 14:56:55 by tamamart          #+#    #+#             */
-/*   Updated: 2025/08/28 21:01:44 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/10/09 15:06:08 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+ * @brief Join two strings into a newly allocated one.
+ * @param s1 First string.
+ * @param s2 Second string.
+ * @return New string or NULL if allocation fails.
+ */
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

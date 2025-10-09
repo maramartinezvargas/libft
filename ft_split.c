@@ -6,12 +6,18 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/28 21:14:49 by tamamart          #+#    #+#             */
-/*   Updated: 2025/09/07 02:30:26 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/10/09 15:20:05 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+ * @brief Count the number of words in a string separated by a delimiter.
+ * @param s Input string.
+ * @param c Delimiter character.
+ * @return Number of words.
+*/
 static	int	ft_count_words(char const *s, char c)
 {
 	int	count;
@@ -30,6 +36,14 @@ static	int	ft_count_words(char const *s, char c)
 	}
 	return (count);
 }
+
+/*
+* @brief Allocate and place words into the array
+* @param s Input string.
+* @param c Delimiter character.
+* @param arr Array to hold the words.
+* @return 1 on success, 0 on failure.
+*/
 
 static int	ft_place_words(char const *s, char c, char **arr)
 {
@@ -59,6 +73,13 @@ static int	ft_place_words(char const *s, char c, char **arr)
 	}
 	return (1);
 }
+
+/*
+ * @brief Split a string into an array using a delimiter.
+ * @param s String to split.
+ * @param c Delimiter character.
+ * @return Array of strings terminated by NULL.
+ */
 
 char	**ft_split(char const *s, char c)
 {

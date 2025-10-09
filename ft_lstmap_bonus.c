@@ -6,11 +6,19 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/07 01:01:43 by tamamart          #+#    #+#             */
-/*   Updated: 2025/09/12 18:36:57 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/10/09 15:34:48 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+ * @brief Create a new list by applying a function to each node.
+ * @param lst Original list.
+ * @param f Function to transform content.
+ * @param del Function to free content if allocation fails.
+ * @return New list or NULL if allocation fails.
+ */
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {

@@ -6,11 +6,15 @@
 /*   By: tamamart <tamamart@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/24 01:10:04 by tamamart          #+#    #+#             */
-/*   Updated: 2025/08/24 02:01:01 by tamamart         ###   ########.fr       */
+/*   Updated: 2025/10/09 15:35:34 by tamamart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+ * @brief Check if a character is printable.
+*/
 
 int	ft_isprint(int c)
 {
